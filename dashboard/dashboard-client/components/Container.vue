@@ -4,7 +4,7 @@
       <Statistics />
     </div>
     <div v-if="state == 1">
-      <Containers />
+      <Docker />
     </div>
     <div v-if="state == 2">
       <Drives />
@@ -16,5 +16,11 @@
 </style>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      state: 0,
+    };
+  },
+};
 </script>

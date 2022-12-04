@@ -13,21 +13,21 @@
         id="stats"
         :src="require(`~/assets/icons/stats-light.png`)"
         alt=""
-        @click="activateTab('stats')"
+        @click="emit(0)"
       />
       <img
         class="icon"
         id="container"
         src="~/assets/icons/container-light.png"
         alt=""
-        @click="activateTab('container')"
+        @click="emit(1)"
       />
       <img
         class="icon"
         id="drive"
         src="~/assets/icons/drives-light.png"
         alt=""
-        @click="activateTab('drive')"
+        @click="emit(2)"
       />
     </div>
   </div>
@@ -48,8 +48,8 @@ export default {
         nav.style.height = "0%";
       }
     },
-    activateTab(i) {
-      console.log(i);
+    emit(msg) {
+      this.$emit(msg);
     },
   },
 };

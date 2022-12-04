@@ -1,6 +1,7 @@
 .container-view {
     height: 90%;
     width: 70%;
+    margin: 1rem auto 0;
 }
 
 @media (max-width: 600px) {
