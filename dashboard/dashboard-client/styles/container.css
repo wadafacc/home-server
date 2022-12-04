@@ -1,0 +1,10 @@
+.container-view {
+    height: 90%;
+    width: 70%;
+}
+
+@media (max-width: 600px) {
+    .container-view {
+        width: 95%;
+    }
+}
